@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio</title>
   </head>
+
   <body>
     <!-- #region Header -->
     <header class="header">
@@ -60,17 +61,17 @@
       </div>
     </header>
     <!-- #endregion -->
+
     <main>
       <!-- #region Hero -->
       <section class="section section-hero">
         <div class="container hero-items">
           <h1 class="hero-main-title">Effective Solutions for Your Business</h1>
-          <button class="button-order" type="button" data-modal-open>
-            Order Service
-          </button>
+          <button class="hero-button-order" type="button">Order Service</button>
         </div>
       </section>
       <!-- #endregion Hero -->
+
       <!-- #region Benefits -->
       <section class="section section-benefits">
         <div class="container benefits-container">
@@ -128,6 +129,7 @@
         </div>
       </section>
       <!-- #endregion Benefits -->
+
       <!-- #region Team -->
       <section class="section section-team">
         <div class="container team-container">
@@ -366,6 +368,7 @@
         </div>
       </section>
       <!-- #endregion Team -->
+
       <!-- #region Portfolio -->
       <section class="section section-portfolio">
         <div class="container portfolio-container">
@@ -375,6 +378,7 @@
               <div class="portfolio-list-item-image-container">
                 <img
                   src="./images/portfolio/banking-app.jpg"
+                  width="360"
                   alt="Banking App image"
                 />
                 <p class="portfolio-list-item-overlay-text">
@@ -392,6 +396,7 @@
               <div class="portfolio-list-item-image-container">
                 <img
                   src="./images/portfolio/cashless-payment.jpg"
+                  width="360"
                   alt="Cashless Payment photo"
                 />
                 <p class="portfolio-list-item-overlay-text">
@@ -409,6 +414,7 @@
               <div class="portfolio-list-item-image-container">
                 <img
                   src="./images/portfolio/meditation-app.jpg"
+                  width="360"
                   alt="Meditation App image"
                 />
                 <p class="portfolio-list-item-overlay-text">
@@ -426,6 +432,7 @@
               <div class="portfolio-list-item-image-container">
                 <img
                   src="./images/portfolio/taxi-service.jpg"
+                  width="360"
                   alt="Taxi Service photo"
                 />
                 <p class="portfolio-list-item-overlay-text">
@@ -443,6 +450,7 @@
               <div class="portfolio-list-item-image-container">
                 <img
                   src="./images/portfolio/screen-illustrations.jpg"
+                  width="360"
                   alt="Screen Illustrations image"
                 />
                 <p class="portfolio-list-item-overlay-text">
@@ -460,6 +468,7 @@
               <div class="portfolio-list-item-image-container">
                 <img
                   src="./images/portfolio/online-cources.jpg"
+                  width="360"
                   alt="Online Courses image"
                 />
                 <p class="portfolio-list-item-overlay-text">
@@ -478,6 +487,7 @@
       </section>
       <!-- #endregion Portfolio -->
     </main>
+
     <!-- #region Footer -->
     <footer class="section page-footer">
       <div class="container footer-content">
@@ -548,15 +558,10 @@
       </div>
     </footer>
     <!-- #endregion Footer -->
-
-    <!-- #region Order overlay -->
-    <div class="overlay-order" data-modal>
-      <div class="container overlay-order-modal">
-        <button
-          type="button"
-          class="overlay-order-close-button"
-          data-modal-close
-        >
+    <!-- #region Overlay -->
+    <div class="overlay-order">
+      <div class="overlay-order-modal">
+        <button type="button" class="overlay-order-close-button">
           <svg width="8" height="8" class="overlay-order-close-button-icon">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -636,82 +641,15 @@
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a href="" class="modal-user-privacy-link">Privacy Policy</a>
-            </label>
+              <a href="" class="modal-user-privacy-link"
+                >Privacy Policy</a
+              ></label
+            >
           </div>
           <button type="button" class="order-modal-button">Send</button>
         </form>
       </div>
     </div>
-    <!-- #endregion -->
-    <!-- <div class="container header-menu" data-menu>
-      <button type="button" class="menu-close-button" data-menu-close>
-        <svg width="8" height="8" class="menu-close-button-icon">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <div class="header-menu-container">
-        <nav class="menu-nav-links-container">
-          <ul class="menu-nav-links">
-            <li class="menu-nav-link-container">
-              <a class="menu-nav-link current" href="./index.html">Studio</a>
-            </li>
-            <li class="menu-nav-link-container">
-              <a class="menu-nav-link" href="">Portfolio</a>
-            </li>
-            <li class="menu-nav-link-container">
-              <a class="menu-nav-link" href="">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="menu-address-list-container">
-          <ul class="menu-address-list">
-            <li>
-              <a class="menu-address-list-item" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-            <li>
-              <a class="menu-address-list-item" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-        </address>
-        <ul class="header-menu-social-icons-list">
-          <li class="header-menu-social-icon-container">
-            <a class="header-menu-social-icon-link" href="">
-              <svg class="header-menu-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="header-menu-social-icon-container">
-            <a class="header-menu-social-icon-link" href="">
-              <svg class="header-menu-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="header-menu-social-icon-container">
-            <a class="header-menu-social-icon-link" href="">
-              <svg class="header-menu-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="header-menu-social-icon-container">
-            <a class="header-menu-social-icon-link" href="">
-              <svg class="header-menu-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div> -->
+    <!-- #endregion Overlay -->
   </body>
-
-  <script src="./js/modal.js"></script>
-  <script src="./js/menu.js"></script>
 </html>
